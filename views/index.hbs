@@ -1,0 +1,48 @@
+    <!-- main container -->
+<style>
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	color:#000;
+    font-size:7px;
+    z-index:100;
+}
+
+
+</style>
+    <!-- main container -->
+    <main class="main-body">
+<a href="https://zyy.sh" class="float" target="_blank">Made With ♥️ by Ditzzsenpai </a>
+
+            <div class="main container text-center">
+                <div class="row login-container shadow-sm  rounded">
+                  <div class="col-6 col-sm-3 border login-right">
+                    <h4 class="mt-4">Site Downloader</h4>
+                    <p class="slug">Download all the source code and assets of any website</p>
+                    <form method="get" class="form" action="/search">
+                        <div class="form-group mt-3">
+                            <div class="input-group">
+                             <div class="input-group-addon">
+                              <span class="glyphicon glyphicon-envelope"></span> 
+                             </div>
+                             <input class="form-control"  id="website" placeholder="https://google.com" type="text"/>
+                             <p class="error password-error"></p>
+                            </div>
+                           </div>                 
+                    <button class="btn btn-primary mt-4 mb-4 submit"  id="download" type="button">Fetch Assets</button>   
+ </form>
+ <header>
+<div aria-busy="true" id="progress" hidden aria-label="Loading, please wait." role="progressbar"></div>
+</header>
+<div hidden id="dis">
+<div class="d-flex n1 mb-4 shadow-sm border rounded flex-column p-5 mt-2 text-center">
+<h5  id='nFilesP'>Total Downloaded file: <span  id='nFiles' style="color: red;font-weight: bold">10</span></h5>
+<p class="log" id='log'></p>
+ <button style="display:none"class="btn btn-success text-sm">Download website assets</button>
+</div>
+ </div>   
+                  </div>
+                  </div>
+        </div>
+    </main>
